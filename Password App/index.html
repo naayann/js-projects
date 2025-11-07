@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
 </head>
 <body>
     <div class="main">
-        <div class="input-box">
-            <input type="password" id="password" placeholder="Password">
-            <p id="message">Password is <span id="strength"></span></p>
-            <a href="pass-generator.html">generate password</a>
+        <div class="left-section">
+            <img src="image/34595822_8150243.jpg">
         </div>
+        <div class="right-section">
+            <div class="heading">
+                <i class="ri-bard-fill"></i>
+                <p>Create an account <br> <span>This is just a password testing website, where you get test strength and also generate strong password.</span></p>
+            </div>
+            <div class="input-box">
+                <label>Your email</label>
+                <input type="text" id="email" placeholder="example@gmail.com">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <p id="message">Password is <span id="strength"></span></p>
+            </div>
+            <button>Get Started</button>
+            <a href="pass-generator.html">generate strong password</a>
+        </div>
+        
     </div>
+    
 
     <script src="strength.js"></script>
 </body>

@@ -15,8 +15,8 @@ pass.addEventListener("input", () => {
         msg.style.color = "red"
     } else if(pass.value.length < 8) {
         str.innerHTML = "moderate"
-        pass.style.borderColor = "#ffe100ff"
-        msg.style.color = "#ffe100ff"
+        pass.style.borderColor = "#e8cd00ff"
+        msg.style.color = "#e8cd00ff"
     } else if(pass.value.length >= 10) {
         str.innerHTML = "strong"
         pass.style.borderColor = "#26d730"
