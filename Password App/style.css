@@ -93,7 +93,17 @@ body {
     font-size: 15px;
 }
 
-.right-section button {
+#eyeIcon {
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    right : 18px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.cta button {
     width: 90%;
     height: 46px;
     border: none;
@@ -106,7 +116,7 @@ body {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
-.right-section button:hover {
+.cta button:hover {
     background-color: rgb(46, 0, 198);
      box-shadow: 0 0 13px rgba(0, 0, 0, 0.4);
 }
