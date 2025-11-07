@@ -29,7 +29,25 @@ generatePassword.addEventListener("click", () => {
 })
 
 function copyPassword() {
-    navigator.clipboard.writeText(passwordBox.value)
+    navigator.clipboard.writeText(passwordBox.value);
+
+    if(passwordBox.value.length > 0) {
+        showToast();
+    } 
 };
 
 copyBtn.addEventListener("click", copyPassword);
+
+let toastBox = document.getElementById('toastBox');
+let msg = '<i class="ri-checkbox-circle-fill"></i>'
+
+function showToast() {
+    let toast = document.createElement('div');
+    toast.classList.add("toast");
+    toast.innerHTML = msg + "Password Copied";
+    toastBox.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove()
+    }, 2000);
+}
