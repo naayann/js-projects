@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #002339;
+    background: #1c2930;
     color: #fff;
 }
 
@@ -18,13 +18,13 @@ body {
     max-width: 700px;
 }
 .container h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px;
     
 }
 .container h1 span {
-    color: #019f55;
-    border-bottom: 4px solid #019f55;
+    color: #005dc0;
+    border-bottom: 4px solid #005dc0;
     padding-bottom: 7px;
 }
 
@@ -40,20 +40,27 @@ body {
     padding: 26px 20px;
     border-radius: 5px;
 }
-.display p {
-    font-size: 24px;
-    cursor: pointer;
-}
+
 .display input {
     border: 0;
     outline: 0;
     font-size: 24px;
 }
 
+#copyBtn {
+    color: #5b5b5b;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+#copyBtn:hover {
+    color: rgb(60, 60, 60);
+}
+
 .container button {
     border: 0;
     outline: 0;
-    background: #019f55;
+    background: #005dc0;
     color: #fff;
     font-size: 22px;
     font-weight: 300;
@@ -83,7 +90,7 @@ body {
     background: #fff;
     font-weight: 500;
     margin: 15px 0;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     position: relative;
@@ -99,7 +106,7 @@ body {
 .toast i {
     margin: 0 10px;
     font-size: 30px;
-    color: green;
+    color: rgb(0, 150, 0);
 }
 .toast::after {
     content: '';
@@ -108,7 +115,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 5px;
-    background: green;
+    background: rgb(0, 150, 0);
     animation: anim 2s linear forwards;
 }
 @keyframes anim {
