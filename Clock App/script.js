@@ -1,13 +1,11 @@
-const clock = document.querySelector(".clock");
-const stopWatch = document.querySelector(".stopwatch");
-
 let hrs = document.getElementById('hrs');
 let min = document.getElementById('min');
-
 let [hours, minutes, seconds] = [0,0,0];
 let displayTime = document.getElementById("displayTime");
 let timer = null;
 
+const clock = document.querySelector(".clock");
+const stopWatch = document.querySelector(".stopwatch");
 const clockSwitch = document.getElementById("clockSwitch");
 const watchSwitch = document.getElementById("watchSwitch");
 const highLight = document.getElementById("highLight")
