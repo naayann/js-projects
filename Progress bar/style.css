@@ -11,6 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .skill {
@@ -63,4 +64,19 @@ svg {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(240, 100, 255);
 }
