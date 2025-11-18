@@ -1,3 +1,7 @@
+:root {
+    --dash: 472;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,8 +59,11 @@ circle {
     animation: anim 2s linear forwards;
 }
 @keyframes anim {
+    0% {
+        stroke-dashoffset: 472;
+    }
     100% {
-        stroke-dashoffset: 165;
+        stroke-dashoffset: var(--dash);
     }
 }
 
