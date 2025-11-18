@@ -25,10 +25,20 @@
             </defs>
          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
         </svg>
-
+    </div>
+    <div class="buttons">
+        <button id="ten">10%</button>
+        <button id="thirty">30%</button>
+        <button id="sixty">60%</button>
+        <button id="ninty">90%</button>
     </div>
 
     <script>
+        const ten = document.getElementById('ten')
+        const thirty = document.getElementById('thirty')
+        const sixty = document.getElementById('sixty')
+        const ninty = document.getElementById('ninty')
+
         let number = document.getElementById("number");
         let counter = 0;
         setInterval(() => {
