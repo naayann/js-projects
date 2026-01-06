@@ -8,4 +8,3 @@ A collection of my JavaScript learning projects — built while exploring tutori
 4. Music Player
 5. Progress bar
 6. QR-Generator
-7. TTS (Text to Speech)
