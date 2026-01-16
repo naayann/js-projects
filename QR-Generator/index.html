@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <p>Enter your text or URL</p>
-        <input type="text" placeholder="Text or Url" id="qrText">
-
+        <h2>MyQR</h2>
+        <p>Generate your QR here for free.</p>
+        
         <div id="imgBox">
-            <img src="" id="qrImage">
+            <img src="dummy.png" id="qrImage">
         </div>
+        
+        <input type="text" placeholder="Paste or URL or Text" id="qrText">
 
         <button onclick="generateQR()" id="generateBtn">Generate QR Code</button>
         <button id="downloadBtn">Download QR Code</button>
