@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+</head>
+<body>
+    <div class="main">
+        <div class="left-section">
+            <img src="image/34595822_8150243.jpg">
+        </div>
+        <div class="right-section">
+            <div class="heading">
+                <i class="ri-bard-fill"></i>
+                <p>Create an account <br> <span>This is just a password testing website, where you get test strength and also generate strong password.</span></p>
+            </div>
+            <div class="input-box">
+                <label>Full name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+                <label>Your email</label>
+                <input type="text" id="email" placeholder="example@gmail.com">
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Password">
+                <button id="eyeIcon"><i class="ri-eye-off-line"></i></button>
+                <p id="message">Password is <span id="strength"></span></p>
+            </div>
+            <div class="cta">
+                <button id="submit">Get Started</button>
+                <a href="generators/generator.html">generate strong password</a>
+            </div>
+        </div>
+    </div>
+    <div class="alert-msg">
+        <div id="pop-up">
+            <i class="ri-checkbox-circle-fill"></i>
+            <h2>Thank You!</h2>
+            <p>You details has been successfully registered.</p>
+            <a href="TTS/index.html">
+                <button id="done">OK</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
