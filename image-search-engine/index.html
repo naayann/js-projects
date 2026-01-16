@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href=""><h1>ImgSearch.io</h1></a>
+        <form id="search-form">
+            <input type="text" id="search-box" placeholder="Search anything here">
+            <button><i class="ri-search-line"></i></button>
+        </form>
+        <img src="/Image-Search-Engine-unsplash/image/moon-fill.png" class="mode">
+    </nav>
+    
+    <div id="welcome-page">
+        <h1>
+            Welcome to ImgSearch.io
+        </h1>
+        <p>
+            this is a website where your get your desired premium high quality image without needing to scrape the internet!
+        </p>
+    </div>
+
+    <div id="no-result">
+        <h1>
+            No result found 
+        </h1>
+        <p>
+            “Hmm... nothing came up. Try searching for something else!”
+        </p>
+    </div>
+
+    <div id="search-result"></div>
+    <button id="show-more-btn">Load more <i class="ri-arrow-down-line"></i></button>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <a href="https://unsplash.com/" target="_blank">
+            <p>powered by unsplash.com</p>
+        </a>
+    </footer>
+
+</body>
+</html>

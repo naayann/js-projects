@@ -1,0 +1,197 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(242, 242, 242);
+    --text-color: black;
+    --secondary-text-color: #b5b5b5;
+    --accent-color: rgb(255, 166, 0);
+    --error-color:#ff0000;
+}
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: rgb(79, 79, 79);
+    --text-color: white;
+    --secondary-text-color: #858585;
+    --accent-color: rgb(255, 166, 0);
+    --error-color:#ff0000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    height: 80px;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.mode {
+    filter: invert(0);
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 6px;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+form {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    height: 50px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+}
+
+form input {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+form button {
+    padding: 0 25px;
+    height: 100%;
+    background: rgb(255, 183, 0);
+    color: var(--primary-color);
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 0 26px 26px 0;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+::placeholder {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+}
+
+form button:hover {
+    background: rgb(255, 166, 0);
+}
+
+#welcome-page {
+    margin-top: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#welcome-page h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--secondary-text-color);
+    margin-bottom: 5px;
+}
+
+#welcome-page p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--secondary-text-color);
+}
+
+
+#no-result {
+    margin-top: 320px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#no-result h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: var(--error-color);
+    margin-bottom: 5px;
+}
+
+#no-result p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: var(--error-color);
+    opacity: 50%;
+}
+
+
+#search-result {
+  width: 80%;
+  margin: 110px auto 50px;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+#search-result img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all ease 0.5s;
+}
+
+#search-result img:hover {
+    transform: scale(1.02);
+}
+
+#show-more-btn {
+    font-size: 15px;
+    font-weight: bold;
+    background: rgb(255, 183, 0);
+    color: var(--primary-color);
+    border: 0;
+    outline: 0;
+    padding: 15px 35px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    transition: all ease 0.5s;
+}
+
+#show-more-btn:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+footer a {
+    color: rgb(166, 166, 166);
+    text-decoration: none;
+}
