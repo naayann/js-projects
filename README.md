@@ -35,7 +35,7 @@ These projects are built for learning purposes. Code quality, structure, and UI 
    git clone https://github.com/your-username/js-projects.git
    ```
 2. Open any project folder
-3. Open index.html in your browser (or use Live Server)
+3. Open `index.html` in your browser (or use Live Server)
 
 
 ---
@@ -45,7 +45,7 @@ These projects are built for learning purposes. Code quality, structure, and UI 
 This is primarily a personal learning repository, but:
 
 * Feel free to explore the code
-* Suggestions and improvements are appericated 
+* Suggestions and improvements are appreicated 
 * You can fork the repo and experiment on your own
 
 ---
